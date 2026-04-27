@@ -2,7 +2,7 @@
 
 **Computer Engineering Student** @ INSA Rouen · Passionate about ML/AI
 
-I build end-to-end ML systems — from fine-tuning models to deploying them with real interfaces.  
+I build end-to-end ML systems from fine-tuning models to deploying them with real interfaces.  
 Currently focused on NLP and RAG architectures.
 
 ---
