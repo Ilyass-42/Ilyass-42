@@ -4,7 +4,7 @@
 
 I build ML systems end to end: training, evaluation, deployment.  
 Currently writing a small GPT from scratch in PyTorch.  
-Also working on Lost in Darija, aiming for a publication.
+Also extending Lost in Darija toward a paper for AbjadNLP 2027.
 
 ---
 
@@ -13,7 +13,12 @@ Also working on Lost in Darija, aiming for a publication.
 ### 🗣️ [Lost in Darija](https://github.com/Ilyass-42/lost-in-darija)
 Speech-to-speech translation pipeline: **English → Moroccan Darija**, designed for tourists.  
 `Whisper` → `Fine-tuned MarianMT` → `Edge TTS`  
-→ BLEU: **18.30** on held-out data from the training distribution, **10.23** on TerjamaBench · [Write-up](https://github.com/Ilyass-42/lost-in-darija/blob/main/writeup.md) · [Live demo](https://huggingface.co/spaces/ILyass-42/lost-in-darija) · [Model](https://huggingface.co/ILyass-42/lost-in-darija-marian)
+→ Rebuilt evaluation with sentence-grouped splits and chrF++ with bootstrap intervals: **35.6** on the test split and **34.4** on TerjamaBench (base model: 11.0 and 16.2). Synthetic data from DODa-500K raises TerjamaBench to **40.6–41.1** (preliminary).  
+→ [Write-up 1](https://github.com/Ilyass-42/lost-in-darija/blob/main/writeup.md) · [Write-up 2](https://github.com/Ilyass-42/lost-in-darija/blob/main/writeup2.md) · [Live demo](https://huggingface.co/spaces/ILyass-42/lost-in-darija) (Part 1 model) · [Model](https://huggingface.co/ILyass-42/lost-in-darija-marian) (Part 1)
+
+### 🧠 [GPT from scratch](https://github.com/Ilyass-42/gpt-from-scratch)
+Small character-level GPT written from scratch in PyTorch (attention, feed-forward layers, embeddings, sampling), with an experiment log on normalization, model width, context length, batch size and learning rate.  
+`PyTorch` · `Google Colab`
 
 ### 🔍 [Smart Doc Search](https://github.com/Ilyass-42/smart-doc-search)
 Intelligent document search engine with dual retrieval modes: **TF-IDF** (built from scratch) and **semantic search**.  
